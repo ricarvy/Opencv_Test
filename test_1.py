@@ -37,7 +37,17 @@ print(cv2.__version__)
 # cv2.destroyAllWindows()
 
 ### image optimize
-cv2.setUseOptimized()
+gray=cv2.imread('data/ali.jpg',cv2.IMREAD_COLOR)
+#gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
+sift=cv2.xfeatures2d.SIFT_create()
+kp=sift.detect(gray,None)
+print(len(kp))
+
+img=cv2.drawKeypoints(gray,kp,gray)
+#
+cv2.imshow('img',img)
+cv2.waitKey()
+cv2.destroyAllWindows()
 
 
