@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be97d951-9582-4d6d-b453-058860ff2f8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test_Project/imagesPreprocessing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test_Project/face_train_use_keras.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,25 +13,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Opencv_Test$Harris_Corner_Detection.coverage" NAME="Harris_Corner_Detection Coverage Results" MODIFIED="1515081695073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm" />
     <SUITE FILE_PATH="coverage/Opencv_Test$dataPreparation.coverage" NAME="dataPreparation Coverage Results" MODIFIED="1515756347212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_Project" />
     <SUITE FILE_PATH="coverage/Opencv_Test$test_1.coverage" NAME="test_1 Coverage Results" MODIFIED="1515060682803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Opencv_Test$imagesPreprocessing.coverage" NAME="imagesPreprocessing Coverage Results" MODIFIED="1515766671268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_Project" />
     <SUITE FILE_PATH="coverage/opencv_test$test_1.coverage" NAME="test_1 Coverage Results" MODIFIED="1514689820362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Opencv_Test$mouseEvent_test.coverage" NAME="mouseEvent_test Coverage Results" MODIFIED="1514790388023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Opencv_Test$face_train_use_keras.coverage" NAME="face_train_use_keras Coverage Results" MODIFIED="1515855919599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_Project" />
+    <SUITE FILE_PATH="coverage/Opencv_Test$drawing_test.coverage" NAME="drawing_test Coverage Results" MODIFIED="1514789705874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Opencv_Test$Harris_Corner_Detection.coverage" NAME="Harris_Corner_Detection Coverage Results" MODIFIED="1515081695073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm" />
+    <SUITE FILE_PATH="coverage/Opencv_Test$imagesPreprocessing.coverage" NAME="imagesPreprocessing Coverage Results" MODIFIED="1515766671268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_Project" />
     <SUITE FILE_PATH="coverage/Opencv_Test$video_test.coverage" NAME="video_test Coverage Results" MODIFIED="1514789152718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Opencv_Test$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1515756469998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_Project" />
-    <SUITE FILE_PATH="coverage/Opencv_Test$mouseEvent_test.coverage" NAME="mouseEvent_test Coverage Results" MODIFIED="1514790388023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Opencv_Test$haar_cascades.coverage" NAME="haar_cascades Coverage Results" MODIFIED="1515753300954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Object_Detection" />
     <SUITE FILE_PATH="coverage/Opencv_Test$SIFT.coverage" NAME="SIFT Coverage Results" MODIFIED="1514987313393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm" />
     <SUITE FILE_PATH="coverage/Opencv_Test$SITF_temp.coverage" NAME="SITF_temp Coverage Results" MODIFIED="1515081192450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm" />
-    <SUITE FILE_PATH="coverage/Opencv_Test$drawing_test.coverage" NAME="drawing_test Coverage Results" MODIFIED="1514789705874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="test_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
+            <state relative-caret-position="874">
               <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -43,7 +44,7 @@
       <file leaf-file-name="haar_cascades.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm/Object_Detection/haar_cascades.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="736">
               <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
                 <element signature="e#257#275#0" expanded="true" />
@@ -55,8 +56,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_Project/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="322">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
                 <element signature="e#180#190#0" expanded="true" />
               </folding>
@@ -68,19 +69,38 @@
         <entry file="file://$PROJECT_DIR$/Test_Project/dataPreparation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imagesPreprocessing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="imagesPreprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_Project/imagesPreprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="56" selection-end-column="24" />
               <folding>
                 <element signature="e#134#144#0" expanded="true" />
+                <element signature="e#254#694#0" expanded="false" />
+                <element signature="e#746#1186#0" expanded="false" />
+                <element signature="e#1221#1387#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="face_train_use_keras.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test_Project/face_train_use_keras.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="180" column="75" lean-forward="false" selection-start-line="180" selection-start-column="75" selection-end-line="180" selection-end-column="75" />
+              <folding>
+                <element signature="e#135#148#0" expanded="true" />
+                <element signature="e#664#1104#0" expanded="false" />
+                <element signature="e#1156#1596#0" expanded="false" />
+                <element signature="e#1631#1797#0" expanded="false" />
+                <element signature="e#1818#5428#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -89,8 +109,8 @@
       <file leaf-file-name="SIFT.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm/SIFT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="138">
+              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding>
                 <element signature="e#170#245#0" expanded="false" />
                 <element signature="e#290#424#0" expanded="false" />
@@ -137,18 +157,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mouseEvent_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mouseEvent_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#129#139#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -169,7 +177,6 @@
         <option value="$PROJECT_DIR$/drawing_test.py" />
         <option value="$PROJECT_DIR$/mouseEvent_test.py" />
         <option value="$PROJECT_DIR$/Algorithm_Detail.py" />
-        <option value="$PROJECT_DIR$/Algorithm/SIFT.py" />
         <option value="$PROJECT_DIR$/test_1.py" />
         <option value="$PROJECT_DIR$/Algorithm/SITF_temp.py" />
         <option value="$PROJECT_DIR$/Algorithm/Harris_Corner_Detection.py" />
@@ -177,6 +184,8 @@
         <option value="$PROJECT_DIR$/Test_Project/dataPreparation.py" />
         <option value="$PROJECT_DIR$/Test_Project/__init__.py" />
         <option value="$PROJECT_DIR$/Test_Project/imagesPreprocessing.py" />
+        <option value="$PROJECT_DIR$/Algorithm/SIFT.py" />
+        <option value="$PROJECT_DIR$/Test_Project/face_train_use_keras.py" />
       </list>
     </option>
   </component>
@@ -186,7 +195,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="891" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
@@ -258,25 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.imagesPreprocessing">
-    <configuration name="Harris_Corner_Detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="opencv_test" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/Harris_Corner_Detection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.face_train_use_keras">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,6 +300,24 @@
       <module name="opencv_test" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_Project/dataPreparation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="face_train_use_keras" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test_Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv_test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_Project/face_train_use_keras.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -350,19 +359,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Harris_Corner_Detection" />
-      <item index="1" class="java.lang.String" itemvalue="Python.haar_cascades" />
-      <item index="2" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dataPreparation" />
-      <item index="4" class="java.lang.String" itemvalue="Python.imagesPreprocessing" />
+      <item index="0" class="java.lang.String" itemvalue="Python.haar_cascades" />
+      <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dataPreparation" />
+      <item index="3" class="java.lang.String" itemvalue="Python.imagesPreprocessing" />
+      <item index="4" class="java.lang.String" itemvalue="Python.face_train_use_keras" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.imagesPreprocessing" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dataPreparation" />
-        <item index="3" class="java.lang.String" itemvalue="Python.haar_cascades" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Harris_Corner_Detection" />
+        <item index="0" class="java.lang.String" itemvalue="Python.face_train_use_keras" />
+        <item index="1" class="java.lang.String" itemvalue="Python.imagesPreprocessing" />
+        <item index="2" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dataPreparation" />
+        <item index="4" class="java.lang.String" itemvalue="Python.haar_cascades" />
       </list>
     </recent_temporary>
   </component>
@@ -380,16 +389,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="891" y="0" width="976" height="1038" extended-state="0" />
-    <editor active="true" />
+    <frame x="891" y="0" width="976" height="1038" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2400835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3058455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -417,22 +425,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/drawing_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#126#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mouseEvent_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#129#139#0" expanded="true" />
+            <element signature="e#129#139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -441,9 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding>
-            <element signature="e#137#147#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,7 +500,7 @@
         <state relative-caret-position="437">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#129#139#0" expanded="true" />
+            <element signature="e#129#139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -514,9 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#137#147#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,7 +557,7 @@
         <state relative-caret-position="437">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#129#139#0" expanded="true" />
+            <element signature="e#129#139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,7 +610,7 @@
         <state relative-caret-position="437">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#129#139#0" expanded="true" />
+            <element signature="e#129#139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -658,7 +650,7 @@
         <state relative-caret-position="437">
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#129#139#0" expanded="true" />
+            <element signature="e#129#139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,7 +725,7 @@
         <state relative-caret-position="437">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#129#139#0" expanded="true" />
+            <element signature="e#129#139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,19 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/SIFT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="e#170#245#0" expanded="false" />
-            <element signature="e#290#424#0" expanded="false" />
-            <element signature="e#442#455#0" expanded="false" />
-            <element signature="e#475#498#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/SITF_temp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -814,15 +793,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#137#147#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
+        <state relative-caret-position="874">
           <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -832,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/Object_Detection/haar_cascades.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="736">
           <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="e#257#275#0" expanded="true" />
@@ -840,11 +816,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Project/data/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Project/data/2.jpg" />
     <entry file="file://$PROJECT_DIR$/Test_Project/data/mon/2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -852,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_Project/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="322">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="e#180#190#0" expanded="true" />
           </folding>
@@ -863,17 +835,47 @@
     <entry file="file://$PROJECT_DIR$/Test_Project/dataPreparation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/SIFT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#170#245#0" expanded="false" />
+            <element signature="e#290#424#0" expanded="false" />
+            <element signature="e#442#455#0" expanded="false" />
+            <element signature="e#475#498#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_Project/imagesPreprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="56" selection-end-column="24" />
           <folding>
             <element signature="e#134#144#0" expanded="true" />
+            <element signature="e#254#694#0" expanded="false" />
+            <element signature="e#746#1186#0" expanded="false" />
+            <element signature="e#1221#1387#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Project/face_train_use_keras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="180" column="75" lean-forward="false" selection-start-line="180" selection-start-column="75" selection-end-line="180" selection-end-column="75" />
+          <folding>
+            <element signature="e#135#148#0" expanded="true" />
+            <element signature="e#664#1104#0" expanded="false" />
+            <element signature="e#1156#1596#0" expanded="false" />
+            <element signature="e#1631#1797#0" expanded="false" />
+            <element signature="e#1818#5428#0" expanded="false" />
           </folding>
         </state>
       </provider>
