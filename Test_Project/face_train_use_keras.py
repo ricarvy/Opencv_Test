@@ -178,7 +178,7 @@ class Model:
         self.model.add(Activation('relu'))
 
         self.model.summary()
-    def train(self,dataset,batch_size=20,nb_epoch=10,data_augmentation=True):
+    def train(self,dataset,batch_size=20,nb_epoch=10,data_augmentation=False):
         sgd=SGD(lr=0.01,
                 decay=1e-6,
                 momentum=0.9,
