@@ -126,13 +126,13 @@ class Dataset:
             self.input_shape = (img_rows,
                                 img_cols,
                                 img_channels)
-        print(train_images.shape[0])
-        print(valid_images.shape[0])
-        print(test_images.shape[0])
+        print(train_images.shape)
+        # print(valid_images.shape[0])
+        # print(test_images.shape[0])
 
         train_labels=np_utils.to_categorical(train_labels,nb_classes)
         valid_labels=np_utils.to_categorical(valid_labels,nb_classes)
-        test_images=np_utils.to_categorical(test_labels,nb_classes)
+        test_labels=np_utils.to_categorical(test_labels,nb_classes)
 
         train_images=train_images.astype('float32')
         valid_images=valid_images.astype('float32')
@@ -142,7 +142,7 @@ class Dataset:
         valid_images/=255
         test_images/=255
 
-        self.train_images=test_images
+        self.train_images=train_images
         self.valid_images=valid_images
         self.test_images=test_images
         self.train_labels=train_labels
@@ -187,10 +187,11 @@ class Model:
                            optimizer=sgd,
                            metrics=['accuracy'])
         if not data_augmentation:
+            print(dataset.train_images.shape,dataset.train_labels.shape,'shape')
             self.model.fit(dataset.train_images,
                            dataset.train_labels,
                            batch_size=batch_size,
-                           nb_epoch=nb_epoch,
+                           epochs=nb_epoch,
                            validation_data=(dataset.valid_images,dataset.valid_labels))
         else:
             datagen=ImageDataGenerator()
@@ -202,11 +203,33 @@ class Model:
                                      sample_per_epoch=dataset.train_images.shape[0],
                                      nb_epoch=nb_epoch,
                                      validation_data=(dataset.valid_images,dataset.valid_labels))
+    def save_model(self,file_path):
+        self.model.save(file_path)
+    def load_model(self,file_path):
+        self.model=load_model(file_path)
+    def evaluate(self,dataset):
+        score=self.model.evaluate(dataset.test_images,dataset.test_labels,verbose=1)
+        print("%s: %.2f%%" % (self.model.metrics_names[1], score[1] * 100))
+    def face_predict(self,image):
+        if K.image_dim_ordering() == 'th' and image.shape!=(1,3,IMAGE_SIZE,IMAGE_SIZE):
+            image=resize_image(image)
+            image=image.reshape((1,3,IMAGE_SIZE,IMAGE_SIZE))
+        elif K.image_dim_ordering() == 'tf' and image.shape!=((1,IMAGE_SIZE,IMAGE_SIZE,3)):
+            image=resize_image(image)
+            image=image.reshape(1,IMAGE_SIZE,IMAGE_SIZE,3)
 
 if __name__ == '__main__':
     dataset=Dataset('data/')
     dataset.load()
-    model=Model()
-    model.build_model(dataset=dataset)
-    model.train(dataset=dataset)
+    print('shape',dataset.train_images.shape,dataset.train_labels.shape)
 
+    # # train
+    # model=Model()
+    # model.build_model(dataset=dataset)
+    # model.train(dataset=dataset)
+    # model.save_model(file_path='model/me.face.model.h5')
+
+    # evaluate
+    model=Model()
+    model.load_model(file_path='model/me.face.model.h5')
+    model.evaluate(dataset)

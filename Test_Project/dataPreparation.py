@@ -40,4 +40,4 @@ def catchPictureFromCamera(windows_name,device_index,catch_num,path_name):
     cap.release()
     cv2.destroyAllWindows()
 
-catchPictureFromCamera('Image Capture',0,100,'data/mon')
+catchPictureFromCamera('Image Capture',0,1000,'data/mon')
