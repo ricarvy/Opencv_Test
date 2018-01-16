@@ -231,13 +231,13 @@ if __name__ == '__main__':
     dataset.load()
     print('shape',dataset.train_images.shape,dataset.train_labels.shape)
 
-    # train
-    model=Model()
-    model.build_model(dataset=dataset)
-    model.train(dataset=dataset)
-    model.save_model(file_path='model/me.face.model.h5')
-
-    # # evaluate
+    # # train
     # model=Model()
-    # model.load_model(file_path='model/me.face.model.h5')
-    # model.evaluate(dataset)
+    # model.build_model(dataset=dataset)
+    # model.train(dataset=dataset)
+    # model.save_model(file_path='model/me.face.model.h5')
+
+    # evaluate
+    model=Model()
+    model.load_model(file_path='model/me.face.model.h5')
+    model.evaluate(dataset)
