@@ -217,19 +217,27 @@ class Model:
         elif K.image_dim_ordering() == 'tf' and image.shape!=((1,IMAGE_SIZE,IMAGE_SIZE,3)):
             image=resize_image(image)
             image=image.reshape(1,IMAGE_SIZE,IMAGE_SIZE,3)
+        image=image.astype('float32')
+        image/=255
+
+        result=self.model.predict_proba(image)
+        print('result',result)
+
+        result=self.model.predict_classes(image)
+        return result[0]
 
 if __name__ == '__main__':
     dataset=Dataset('data/')
     dataset.load()
     print('shape',dataset.train_images.shape,dataset.train_labels.shape)
 
-    # # train
-    # model=Model()
-    # model.build_model(dataset=dataset)
-    # model.train(dataset=dataset)
-    # model.save_model(file_path='model/me.face.model.h5')
-
-    # evaluate
+    # train
     model=Model()
-    model.load_model(file_path='model/me.face.model.h5')
-    model.evaluate(dataset)
+    model.build_model(dataset=dataset)
+    model.train(dataset=dataset)
+    model.save_model(file_path='model/me.face.model.h5')
+
+    # # evaluate
+    # model=Model()
+    # model.load_model(file_path='model/me.face.model.h5')
+    # model.evaluate(dataset)
