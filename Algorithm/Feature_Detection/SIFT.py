@@ -6,6 +6,7 @@
 
 import cv2
 import numpy as np
+import matplotlib.pyplot as plt
 
 ### default width of desscriptor histogram array
 SIFT_DESCR_WIDTH = 4
@@ -15,6 +16,9 @@ SIFT_DESCR_HIST_BINS = 8
 
 ### assumed Gaussian blur for input image
 SIFT_INIT_SIGMA = 0.5
+
+### assumed Gaussian blur for initial octave
+SIFT_INT_OCT_SIGMA=1.6
 
 ### maximum steps of keypoint interpolation(添写) before failure
 SIFT_MAX_INTERP_STEPS=5
@@ -73,20 +77,55 @@ def GaussianCoreGenerator(sigma):
             GaussianCore[x,y] = element
     return GaussianCore
 
-### 使用高斯核进行高斯模糊
-def GaussianBlurring(img,gaussianCore):
-    img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+### 使用高斯核进行高斯模糊,构建高斯金字塔
+def GaussianPymGenerator(img,sigma,sigma_otc,ksize):
+    ### 灰度变化
+    if img.shape[2] == 3:
+        img_gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    else:
+        img_gray=img
 
-    ### 矩阵拓展
-    img_broad=np.zeros(shape=(img.shape[0]+np.floor(gaussianCore.shape[0]/2).astype(np.int)*2,img.shape[1]+np.floor(gaussianCore.shape[0]/2).astype(np.int)*2))
+    ### 定义Pym的octave数和interval数
+    row = img.shape[0]
+    col=img.shape[1]
+    octave= np.floor(np.log2(np.minimum(row,col))).astype(np.int)-3
+    interval=3
 
-    print(img_broad.shape)
 
-    # cv2.imshow('img',img)
+    ### 构建高斯金字塔list
+    gaussianPym = []
+    gaussianPym_oct=[]
+    ### 计算初始尺度
+    sigma=np.sqrt(np.abs(sigma**2-sigma_otc**2))
+    for o in range(octave):
+        for s in range(interval):
+            sigma=(2**((o-1)+s/interval))*sigma
+            img_gray=cv2.GaussianBlur(img_gray,ksize,sigma)
+            gaussianPym_oct.append(img_gray)
+        img_gray=cv2.pyrDown(img_gray)
+        gaussianPym.append(gaussianPym_oct)
+        gaussianPym_oct=[]
+
+    #
+    # # plt.subplot(151)
+    # # plt.imshow(gaussianPym[0][0])
+    # # plt.subplot(152)
+    # # plt.imshow(gaussianPym[1][0])
+    # # plt.subplot(153)
+    # # plt.imshow(gaussianPym[2][0])
+    # # plt.subplot(154)
+    # # plt.imshow(gaussianPym[3][0])
+    # # plt.subplot(155)
+    # # plt.imshow(gaussianPym[4][0])
+    # plt.show()
+
+
+    # img=np.hstack((img_gray,img_blur))
+
+    # cv2.imshow('img_gray',img_gray)
     # cv2.waitKey()
     # cv2.destroyAllWindows()
 
 
-
 img=cv2.imread(filename=SIFT_TEST_FILE)
-GaussianBlurring(img,GaussianCoreGenerator(0.6))
+GaussianPymGenerator(img,SIFT_INIT_SIGMA,SIFT_INT_OCT_SIGMA,(5,5))
